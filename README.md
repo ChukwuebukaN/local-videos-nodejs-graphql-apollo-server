@@ -1,4 +1,4 @@
-GRAPHQL SEVER - WITH APOLLO - PROJECT
+GRAPHQL - WITH APOLLO SEVER - LOCAL VIDEOS PROJECT
 
 1 - Apollo Server
 
@@ -75,7 +75,7 @@ GRAPHQL SEVER - WITH APOLLO - PROJECT
 - 2 - GET Specific data - getting specific data from tables passing an id
 - here we update the schema and resolver to handle specific data by id.
 - in apollo explorer you add a variable like below, to be passed to the query in example also below.
-- - INSIDE OUR VARIABLES {
+- - VARIABLES {
     "id": "1"
     }
 - - query ReviewQuery($id: ID!) {
@@ -94,7 +94,7 @@ GRAPHQL SEVER - WITH APOLLO - PROJECT
 -
 - 3 - GET Related data - getting specific data from tables passing an id
 - we make changes to our schema, and resolver to let users get related data or deeply nested data.
-- - INSIDE OUR VARIABLES {
+- - VARIABLES {
     "id": "2"
     }
 - - query GameQuery($id: ID!) {
@@ -123,7 +123,7 @@ GRAPHQL SEVER - WITH APOLLO - PROJECT
 - 4 - MUTATIONS (create, update, delete) - editing or mutating data in the tables.
 - we make changes to our schema, and resolver to let users delete specific data.
 - if you are using a local db.js file, it will not persist the mutation.
-- - INSIDE OUR INSIDE OUR VARIABLES {
+- - INSIDE OUR VARIABLES {
     "id": "2",
     "edits": {
     "title": "Apex Legends 2",
